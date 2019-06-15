@@ -18,6 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\2.Open-Closed Principle\Header.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\2.Open-Closed Principle\Main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{F8852D68-72B8-4B8D-B3DF-FFF7C74A6E31}</ProjectGuid>
@@ -114,12 +120,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\1.Single Responsibility Principle\Jurnal.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\1.Single Responsibility Principle\Main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

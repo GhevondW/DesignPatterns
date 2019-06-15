@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\1.Single Responsibility Principle\Jurnal.h">
+    <ClInclude Include="..\2.Open-Closed Principle\Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\1.Single Responsibility Principle\Main.cpp">
+    <ClCompile Include="..\2.Open-Closed Principle\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
