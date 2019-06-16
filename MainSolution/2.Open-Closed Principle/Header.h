@@ -29,6 +29,7 @@ struct Product
 
 /**
 * This is the wrong way to solve this problem
+* The problem is to create filters for some objects list
 */
 struct ProductFilter
 {
