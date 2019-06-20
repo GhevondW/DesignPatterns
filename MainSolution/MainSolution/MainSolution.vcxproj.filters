@@ -15,12 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\4.Interface Segregation Principle\Header.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\4.Interface Segregation Principle\Main.cpp">
+    <ClCompile Include="..\6.Dependency Inversion Principle\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
