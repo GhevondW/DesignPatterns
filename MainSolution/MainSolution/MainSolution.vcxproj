@@ -19,10 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\6.Builder\Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\6.Builder\HtmlElemet.h" />
+    <ClCompile Include="..\6.Builder\Groovy-Style Builder\Main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
