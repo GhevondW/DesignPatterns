@@ -19,15 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\6.Builder\Builder Facets\Main.cpp" />
-    <ClCompile Include="..\6.Builder\Builder Facets\Person.cpp" />
-    <ClCompile Include="..\6.Builder\Builder Facets\PersonBuilder.cpp" />
+    <ClCompile Include="..\7.Factories\1.Factory Method\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\6.Builder\Builder Facets\Person.h" />
-    <ClInclude Include="..\6.Builder\Builder Facets\PersonAddressBuilder.h" />
-    <ClInclude Include="..\6.Builder\Builder Facets\PersonBuilder.h" />
-    <ClInclude Include="..\6.Builder\Builder Facets\PersonJobBuilder.h" />
+    <ClInclude Include="..\7.Factories\1.Factory Method\Point.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

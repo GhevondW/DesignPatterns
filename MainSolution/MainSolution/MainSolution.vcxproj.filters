@@ -15,27 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\6.Builder\Builder Facets\Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\6.Builder\Builder Facets\Person.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\6.Builder\Builder Facets\PersonBuilder.cpp">
+    <ClCompile Include="..\7.Factories\1.Factory Method\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\6.Builder\Builder Facets\Person.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\6.Builder\Builder Facets\PersonBuilder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\6.Builder\Builder Facets\PersonAddressBuilder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\6.Builder\Builder Facets\PersonJobBuilder.h">
+    <ClInclude Include="..\7.Factories\1.Factory Method\Point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
