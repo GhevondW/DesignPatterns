@@ -15,19 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\7.Factories\3.Abstract Factory\Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="..\7.Factories\Person Factory\PersonFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7.Factories\Person Factory\PersonBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\7.Factories\3.Abstract Factory\HotDrink.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\7.Factories\3.Abstract Factory\HotDrinkFactory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\7.Factories\3.Abstract Factory\DrinkFactory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="..\7.Factories\Person Factory\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
