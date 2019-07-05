@@ -81,6 +81,7 @@ public:
 public:
 
 	static PersonBuilder create();
+	static PersonBuilder create(const int id);
 
 private:
 	const int _id;
@@ -126,6 +127,10 @@ private:
 	{
 
 	}
+	PersonBuilder(const int id)
+		:_pers(new Person(id)),
+		PersonBuilderBase(_pers)
+	{}
 public:
 	~PersonBuilder() = default;
 
@@ -165,6 +170,10 @@ private:
 
 PersonBuilder Person::create() {
 	return PersonBuilder();
+}
+
+PersonBuilder Person::create(const int id) {
+	return PersonBuilder(id);
 }
 
 #endif // !_PERSON_BUILDER_H__

@@ -23,6 +23,10 @@ int main() {
 	Ghevond->print();
 	Armen->print();
 
+	Person* pers = PersonFactory::create_person("pers","pers","er","asdasdasd",45);
+
+	pers->print();
+
 	std::cin.get();
 	return 0;
 }
