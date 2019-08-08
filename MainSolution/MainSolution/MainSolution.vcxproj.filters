@@ -15,15 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\7.Factories\Person Factory\PersonFactory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\7.Factories\Person Factory\PersonBuilder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\7.Factories\Person Factory\Main.cpp">
+    <ClCompile Include="..\8.Prototype\Motivation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

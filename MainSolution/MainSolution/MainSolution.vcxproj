@@ -19,11 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\7.Factories\Person Factory\PersonBuilder.h" />
-    <ClInclude Include="..\7.Factories\Person Factory\PersonFactory.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\7.Factories\Person Factory\Main.cpp" />
+    <ClCompile Include="..\8.Prototype\Motivation.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
