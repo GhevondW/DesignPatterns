@@ -1,3 +1,4 @@
+#if 0
 #include <iostream>
 #include <vector>
 #include <unordered_map>
@@ -21,3 +22,4 @@ int main()
 	delete shape_1_clone;
 	return 0;
 }
+#endif
