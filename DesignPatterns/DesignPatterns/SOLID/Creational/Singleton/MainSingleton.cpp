@@ -6,6 +6,8 @@
 //  Copyright © 2020 Ghevond Gevorgyan. All rights reserved.
 //
 
+#if 0
+
 #include <stdio.h>
 #include <iostream>
 #include "Database.h"
@@ -28,3 +30,5 @@ int main(){
     
     return 0;
 }
+
+#endif

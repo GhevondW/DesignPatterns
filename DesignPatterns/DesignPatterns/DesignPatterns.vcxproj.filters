@@ -36,6 +36,15 @@
     <ClCompile Include="SOLID\Creational\Prototype\MainPrototype.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SOLID\Creational\Singleton\MainSingleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOLID\Structureal\Adapter\MainAdapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOLID\Structureal\Bridge\MainBridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SOLID\Single Responsibility Principle\Jurnal.h">
@@ -60,6 +69,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SOLID\Creational\Prototype\Shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOLID\Creational\Singleton\Database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOLID\Structureal\Bridge\Device.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

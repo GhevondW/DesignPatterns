@@ -143,8 +143,11 @@
     <ClCompile Include="SOLID\Creational\Builder\MainBuilder.cpp" />
     <ClCompile Include="SOLID\Creational\Factory Method\MainFactoryMethod.cpp" />
     <ClCompile Include="SOLID\Creational\Prototype\MainPrototype.cpp" />
+    <ClCompile Include="SOLID\Creational\Singleton\MainSingleton.cpp" />
     <ClCompile Include="SOLID\Open Closed Principle\Main.cpp" />
     <ClCompile Include="SOLID\Single Responsibility Principle\Main.cpp" />
+    <ClCompile Include="SOLID\Structureal\Adapter\MainAdapter.cpp" />
+    <ClCompile Include="SOLID\Structureal\Bridge\MainBridge.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SOLID\Creational\Abstract Factory\GUIElement.h" />
@@ -153,8 +156,10 @@
     <ClInclude Include="SOLID\Creational\Factory Method\Transport.h" />
     <ClInclude Include="SOLID\Creational\Factory Method\TransportFactory.h" />
     <ClInclude Include="SOLID\Creational\Prototype\Shape.h" />
+    <ClInclude Include="SOLID\Creational\Singleton\Database.h" />
     <ClInclude Include="SOLID\Single Responsibility Principle\Jurnal.h" />
     <ClInclude Include="SOLID\Single Responsibility Principle\JurnalPrinter.h" />
+    <ClInclude Include="SOLID\Structureal\Bridge\Device.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
