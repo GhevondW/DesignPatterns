@@ -148,6 +148,7 @@
     <ClCompile Include="SOLID\Single Responsibility Principle\Main.cpp" />
     <ClCompile Include="SOLID\Structureal\Adapter\MainAdapter.cpp" />
     <ClCompile Include="SOLID\Structureal\Bridge\MainBridge.cpp" />
+    <ClCompile Include="SOLID\Structureal\Decorator\MainDecorator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SOLID\Creational\Abstract Factory\GUIElement.h" />
@@ -160,6 +161,7 @@
     <ClInclude Include="SOLID\Single Responsibility Principle\Jurnal.h" />
     <ClInclude Include="SOLID\Single Responsibility Principle\JurnalPrinter.h" />
     <ClInclude Include="SOLID\Structureal\Bridge\Device.h" />
+    <ClInclude Include="SOLID\Structureal\Decorator\DataStream.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

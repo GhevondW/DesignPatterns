@@ -45,6 +45,9 @@
     <ClCompile Include="SOLID\Structureal\Bridge\MainBridge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SOLID\Structureal\Decorator\MainDecorator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SOLID\Single Responsibility Principle\Jurnal.h">
@@ -75,6 +78,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SOLID\Structureal\Bridge\Device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOLID\Structureal\Decorator\DataStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

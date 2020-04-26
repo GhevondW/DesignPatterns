@@ -1,4 +1,4 @@
-
+#if 0
 #include <iostream>
 #include "Device.h"
 
@@ -22,3 +22,4 @@ int main() {
 	delete remote;
 	return 0;
 }
+#endif
