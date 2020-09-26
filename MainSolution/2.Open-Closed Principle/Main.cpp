@@ -15,6 +15,8 @@ int main() {
 	auto result = filter.filter(vect,colorSpec);
 	result = filter.filter(vect,colorAndSizeSpec);
 
+	AndSpecification aspec{&colorSpec, &colorAndSizeSpec};
+
 	std::cin.get();
 	return 0;
 }

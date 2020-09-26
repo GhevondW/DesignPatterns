@@ -2,6 +2,7 @@
 #define _JURNAL_PRINTER_H_
 
 #include "Jurnal.h"
+#include <iostream>
 
 class JurnalPrinter
 {
@@ -13,7 +14,7 @@ public:
 
 	~JurnalPrinter()
 	{
-	
+
 	}
 
 public:

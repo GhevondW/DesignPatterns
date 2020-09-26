@@ -29,11 +29,11 @@ struct Product
 
 /**
 * This is the wrong way to solve this problem
-* The problem is to create filters for some objects list
+* 
 */
 struct ProductFilter
 {
-	static std::vector<Product> by_size(const std::vector<Product>& input,Size size) {
+	static std::vector<Product> BySize(const std::vector<Product>& input,Size size) {
 		std::vector<Product> result;
 		for (auto p:input)
 		{
@@ -44,7 +44,7 @@ struct ProductFilter
 		return result;
 	}
 
-	static std::vector<Product> by_color(const std::vector<Product>& input, Color color) {
+	static std::vector<Product> ByColor(const std::vector<Product>& input, Color color) {
 		std::vector<Product> result;
 		for (auto p : input)
 		{
@@ -55,7 +55,7 @@ struct ProductFilter
 		return result;
 	}
 
-	static std::vector<Product> by_color_and_size(const std::vector<Product>& input, Color color,Size size) {
+	static std::vector<Product> ByColorAndSize(const std::vector<Product>& input, Color color,Size size) {
 		std::vector<Product> result;
 		for (auto p : input)
 		{
@@ -74,7 +74,7 @@ struct ProductFilter
 template<class T>
 struct Specification
 {
-	virtual bool is_satisfied(T item) = 0;
+	virtual bool is_satisfied(T item) const = 0;
 };
 
 template<class T>
@@ -102,10 +102,11 @@ struct ColorSpecification : public Specification<Product>
 	Color _color;
 	ColorSpecification(Color color):_color(color) {
 	}
-	bool is_satisfied(Product item) override {
+	bool is_satisfied(Product item) const override {
 		return item._color == _color;
 	}
 };
+
 
 struct ColorAndSizeSpecialization:public Specification<Product>
 {
@@ -119,10 +120,29 @@ struct ColorAndSizeSpecialization:public Specification<Product>
 	
 	}
 
-	bool is_satisfied(Product item) override {
+	bool is_satisfied(Product item) const override {
 		return item._color == _color && item._size == _size;
 	}
 
+};
+
+struct AndSpecification: public Specification<Product>
+{
+
+	AndSpecification(const Specification<Product>* const ref1,
+					const Specification<Product>* const ref2)
+			:_spec1(ref1),
+			_spec2(ref2)
+	{
+	
+	}
+
+	bool is_satisfied(Product item) const override {
+		return _spec1->is_satisfied(item) && _spec2->is_satisfied(item);
+	}
+
+	const Specification<Product>* _spec1{nullptr};
+	const Specification<Product>* _spec2{nullptr};
 };
 
 #endif // !_HEADER_H__

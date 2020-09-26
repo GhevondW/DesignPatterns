@@ -1,3 +1,4 @@
+#if 0
 #include <iostream>
 #include "DataStream.h"
 
@@ -30,3 +31,4 @@ int main(){
 	delete stringReader;
 	return 0;
 }
+#endif
