@@ -10,41 +10,41 @@ struct Document
 };
 
 /**
-* This is bas usecase
+* This is the wrong way
 */
-//struct IMachine
-//{
-//	virtual void print(Document& doc) = 0;
-//	virtual void scan(Document& doc) = 0;
-//	virtual void fax(Document& doc) = 0;
-//};
-//
-//struct Machine:IMachine
-//{
-//	void print(Document& doc) override {
-//		 //ok for all functionality
-//	}
-//	void scan(Document& doc) override {
-//		//ok for all functionality
-//	}
-//	void fax(Document& doc) override {
-//		//ok for all functionality
-//	}
-//};
-//
-////but what if
-//struct Printer:IMachine
-//{
-//	void print(Document& doc) override {
-//		//ok
-//	}
-//	void scan(Document& doc) override {
-//		//is not good
-//	}
-//	void fax(Document& doc) override {
-//		//is not good
-//	}
-//};
+struct IMachineWrong
+{
+	virtual void print(Document& doc) = 0;
+	virtual void scan(Document& doc) = 0;
+	virtual void fax(Document& doc) = 0;
+};
+
+struct MachineWrong:IMachineWrong
+{
+	void print(Document& doc) override {
+		 //ok for all functionality
+	}
+	void scan(Document& doc) override {
+		//ok for all functionality
+	}
+	void fax(Document& doc) override {
+		//ok for all functionality
+	}
+};
+
+//but what if
+struct PrinterWrong:IMachineWrong
+{
+	void print(Document& doc) override {
+		//ok
+	}
+	void scan(Document& doc) override {
+		//is not good
+	}
+	void fax(Document& doc) override {
+		//is not good
+	}
+};
 
 /**
 * This is the right way to solve this problem
@@ -82,7 +82,7 @@ struct Printer :IPrinter
 struct IMachine:IScanner,IPrinter
 {};
 
-struct Machine:IMachine
+struct Machine: public IMachine
 {
 	IScanner& _scanner;
 	IPrinter& _printer;
